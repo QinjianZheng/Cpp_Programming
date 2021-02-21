@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
     }
     fprintf(f, "\n\n");
     fprintf(f, "create:\n\tfor ((i=1;i<=%d;i++)); do touch ex$$i.cpp; \
-        echo \\/\\* $$i\\*\\/ \\\\n\\\\n#include \\\"std_lib_facilities.h\\\" > ex$$i.cpp;done\n", atoi(argv[2]));
+        echo \\/\\* $$i\\*\\/ \\\\n\\\\n#include \\\"../std_lib_facilities.h\\\" > ex$$i.cpp;done\n", atoi(argv[2]));
 
     return 0;
 }
